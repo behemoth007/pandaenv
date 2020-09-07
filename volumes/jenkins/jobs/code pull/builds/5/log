@@ -1,0 +1,20 @@
+Started by user [8mha:////4B9sBjngpG0GYD7QVCJ4Z3pF6Dk1ICI2XPfiQK2gYUUqAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9gsS8lEQACjKVYMAAAAA=[0mpanda
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/code pull
+The recommended git tool is: NONE
+using credential github
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/behemoth007/panda_application.git # timeout=10
+Fetching upstream changes from https://github.com/behemoth007/panda_application.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+using GIT_ASKPASS to set credentials haslo do githuba
+ > git fetch --tags --progress -- https://github.com/behemoth007/panda_application.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision e542d9ccf4f60af8ba563784f53018a01ee8eabe (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e542d9ccf4f60af8ba563784f53018a01ee8eabe # timeout=10
+Commit message: "settings"
+First time build. Skipping changelog.
+Finished: SUCCESS

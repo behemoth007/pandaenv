@@ -1,0 +1,60 @@
+2020-08-23T07:24:50.602Z [jfrou] [INFO ] [423e8b95dbdf48ad] [bootstrap.go:71               ] [main                ] - Router (jfrou) service initialization started. Version: 1.4.2 Revision: 04f9b835bcb908f9bb8d4743e64903e077f5b1ad PID: 4042 Home: /opt/jfrog/artifactory
+2020-08-23T07:24:50.602Z [jfrou] [INFO ] [423e8b95dbdf48ad] [bootstrap.go:74               ] [main                ] - JFrog Router IP: 172.17.0.2
+2020-08-23T07:24:55.609Z [jfrou] [INFO ] [423e8b95dbdf48ad] [security_keys.go:114          ] [main                ] - Master key is missing. Pending for 5 seconds with 2m0s timeout
+2020-08-23T07:25:00.611Z [jfrou] [INFO ] [423e8b95dbdf48ad] [security_keys.go:128          ] [main                ] - Cluster join: Join key is missing. Pending for 10 seconds with 2m0s timeout
+2020-08-23T07:25:04.614Z [jfrou] [INFO ] [423e8b95dbdf48ad] [bootstrap.go:175              ] [main                ] - System configuration encryption report:
+shared.newrelic.licenseKey: does not exist in the config file
+shared.security.joinKeyFile: file '/opt/jfrog/artifactory/var/etc/security/join.key' - already encrypted
+2020-08-23T07:25:04.618Z [jfrou] [INFO ] [423e8b95dbdf48ad] [bootstrap.go:79               ] [main                ] - JFrog Router Service ID: jfrou@01egd39nq95agxd59x2aac8jxb
+2020-08-23T07:25:04.618Z [jfrou] [INFO ] [423e8b95dbdf48ad] [bootstrap.go:80               ] [main                ] - JFrog Router Node ID: e7ce574b05ac
+2020-08-23T07:25:04.652Z [jfrou] [INFO ] [423e8b95dbdf48ad] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2020-08-23T07:25:06.605Z [jfrou] [INFO ] [423e8b95dbdf48ad] [config_holder.go:107          ] [main                ] - Configuration update detected
+2020-08-23T07:25:08.984Z [jfrou] [INFO ] [423e8b95dbdf48ad] [join_executor.go:188          ] [main                ] - Cluster join: Successfully joined the cluster
+2020-08-23T07:25:08.984Z [jfrou] [INFO ] [423e8b95dbdf48ad] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2020-08-23T07:25:08.984Z [jfrou] [INFO ] [423e8b95dbdf48ad] [http_client_holder.go:175     ] [main                ] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2020-08-23T07:25:09.006Z [jfrou] [INFO ] [423e8b95dbdf48ad] [main.go:47                    ] [main                ] - Router (jfrou) service initialization completed in 18.409 seconds. Listening on port: 8082
+2020-08-23T07:25:34.039Z [jfrou] [INFO ] [c104525086d43a3 ] [local_topology.go:213         ] [main                ] - 
+###############################################################
+###   All services started successfully in 43.442 seconds   ###
+###############################################################
+2020-09-04T18:22:34.598Z [jfrou] [INFO ] [56fa885fe621130 ] [bootstrap.go:71               ] [main                ] - Router (jfrou) service initialization started. Version: 1.4.2 Revision: 04f9b835bcb908f9bb8d4743e64903e077f5b1ad PID: 3659 Home: /opt/jfrog/artifactory
+2020-09-04T18:22:34.601Z [jfrou] [INFO ] [56fa885fe621130 ] [bootstrap.go:74               ] [main                ] - JFrog Router IP: 172.17.0.2
+2020-09-04T18:22:34.605Z [jfrou] [INFO ] [56fa885fe621130 ] [bootstrap.go:175              ] [main                ] - System configuration encryption report:
+shared.newrelic.licenseKey: does not exist in the config file
+shared.security.joinKeyFile: file '/opt/jfrog/artifactory/var/etc/security/join.key' - already encrypted
+2020-09-04T18:22:34.607Z [jfrou] [INFO ] [56fa885fe621130 ] [bootstrap.go:79               ] [main                ] - JFrog Router Service ID: jfrou@01egd39nq95agxd59x2aac8jxb
+2020-09-04T18:22:34.607Z [jfrou] [INFO ] [56fa885fe621130 ] [bootstrap.go:80               ] [main                ] - JFrog Router Node ID: 2d09ab5e168f
+2020-09-04T18:22:34.634Z [jfrou] [INFO ] [56fa885fe621130 ] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2020-09-04T18:22:34.635Z [jfrou] [INFO ] [56fa885fe621130 ] [http_client_holder.go:175     ] [main                ] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2020-09-04T18:22:36.837Z [jfrou] [INFO ] [56fa885fe621130 ] [config_holder.go:107          ] [main                ] - Configuration update detected
+2020-09-04T18:22:53.911Z [jfrou] [INFO ] [56fa885fe621130 ] [join_executor.go:188          ] [main                ] - Cluster join: Successfully joined the cluster
+2020-09-04T18:22:53.912Z [jfrou] [INFO ] [56fa885fe621130 ] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2020-09-04T18:22:53.912Z [jfrou] [INFO ] [56fa885fe621130 ] [http_client_holder.go:175     ] [main                ] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2020-09-04T18:22:53.961Z [jfrou] [INFO ] [56fa885fe621130 ] [main.go:47                    ] [main                ] - Router (jfrou) service initialization completed in 19.377 seconds. Listening on port: 8082
+2020-09-04T18:23:13.984Z [jfrou] [INFO ] [268513ac366ef2a4] [local_topology.go:213         ] [main                ] - 
+###############################################################
+###   All services started successfully in 39.400 seconds   ###
+###############################################################
+2020-09-07T17:02:23.457Z [jfrou] [INFO ] [3cac09b107a7cc2c] [bootstrap.go:71               ] [main                ] - Router (jfrou) service initialization started. Version: 1.4.2 Revision: 04f9b835bcb908f9bb8d4743e64903e077f5b1ad PID: 3666 Home: /opt/jfrog/artifactory
+2020-09-07T17:02:23.459Z [jfrou] [INFO ] [3cac09b107a7cc2c] [bootstrap.go:74               ] [main                ] - JFrog Router IP: 172.20.0.2
+2020-09-07T17:02:23.462Z [jfrou] [INFO ] [3cac09b107a7cc2c] [bootstrap.go:175              ] [main                ] - System configuration encryption report:
+shared.newrelic.licenseKey: does not exist in the config file
+shared.security.joinKeyFile: file '/opt/jfrog/artifactory/var/etc/security/join.key' - already encrypted
+2020-09-07T17:02:23.464Z [jfrou] [INFO ] [3cac09b107a7cc2c] [bootstrap.go:79               ] [main                ] - JFrog Router Service ID: jfrou@01egd39nq95agxd59x2aac8jxb
+2020-09-07T17:02:23.465Z [jfrou] [INFO ] [3cac09b107a7cc2c] [bootstrap.go:80               ] [main                ] - JFrog Router Node ID: 5d145cc8aa55
+2020-09-07T17:02:23.616Z [jfrou] [INFO ] [3cac09b107a7cc2c] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2020-09-07T17:02:23.620Z [jfrou] [INFO ] [3cac09b107a7cc2c] [http_client_holder.go:175     ] [main                ] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2020-09-07T17:02:25.524Z [jfrou] [INFO ] [3cac09b107a7cc2c] [config_holder.go:107          ] [main                ] - Configuration update detected
+2020-09-07T17:02:57.287Z [jfrou] [INFO ] [3cac09b107a7cc2c] [join_executor.go:188          ] [main                ] - Cluster join: Successfully joined the cluster
+2020-09-07T17:02:57.298Z [jfrou] [INFO ] [3cac09b107a7cc2c] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2020-09-07T17:02:57.314Z [jfrou] [INFO ] [3cac09b107a7cc2c] [http_client_holder.go:175     ] [main                ] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2020-09-07T17:02:57.481Z [jfrou] [INFO ] [3cac09b107a7cc2c] [main.go:47                    ] [main                ] - Router (jfrou) service initialization completed in 34.050 seconds. Listening on port: 8082
+2020-09-07T17:03:17.497Z [jfrou] [INFO ] [44f2689e100dff86] [local_topology.go:213         ] [main                ] - 
+###############################################################
+###   All services started successfully in 54.064 seconds   ###
+###############################################################

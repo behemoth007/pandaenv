@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+    jenkins:
+        image: jenkins/jenkins
+        container_name: jenkins
+        ports:
+        - "8880:8080"
+        - "50000:50000"
+        volumes: 
+        - /home/panda/jenkins:/var/jenkins_home
+    ubuntu:
+        container_name: ubuntu
+        build: .
+        # . oznacza, ze dockerfile jest w tym samym katalogu
+        volumes: 
+        - /var/run/docker.sock:/var/run/socker.sock
+        command: java -jar agent.jar -jnlpUrl http://192.168.44.44:8880/computer/Slave/slave-agent.jnlp -secret 4576e23bab55a574d97e689e41f78786783a8ed4c245f4e0d82f9448d0b45c3e -workDir "/home/"
+        depends_on:
+        - jenkins
+        networks: 
+        - docker_network              
+
+networks:
+    docker_network:
+        driver: bridge
+    
+

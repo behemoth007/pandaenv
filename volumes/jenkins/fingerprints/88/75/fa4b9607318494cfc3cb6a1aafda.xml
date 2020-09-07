@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-08-28 11:21:39.76 UTC</timestamp>
+  <md5sum>8875fa4b9607318494cfc3cb6a1aafda</md5sum>
+  <fileName>Credential id=github name=behemoth007/****** (haslo do githuba)</fileName>
+  <usages>
+    <entry>
+      <string>code pull</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

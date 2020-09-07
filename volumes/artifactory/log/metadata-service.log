@@ -1,0 +1,123 @@
+2020-08-23T07:24:55.714Z [jfmd ] [INFO ] [49388e32142e4008] [security_keys.go:114          ] [main                ] - Master key is missing. Pending for 5 seconds with 2m0s timeout [init]
+2020-08-23T07:25:00.727Z [jfmd ] [INFO ] [49388e32142e4008] [security_keys.go:128          ] [main                ] - Cluster join: Join key is missing. Pending for 10 seconds with 2m0s timeout [init]
+2020-08-23T07:25:04.731Z [jfmd ] [INFO ] [49388e32142e4008] [database_bearer.go:92         ] [main                ] - Connecting to (db config: {sqlite /opt/jfrog/artifactory/var/data/metadata/sqlite.db?_fk=yes&_busy_timeout=5000&_txlock=immediate&cache=shared}) [database]
+2020-08-23T07:25:04.770Z [jfmd ] [INFO ] [49388e32142e4008] [migrator.go:61                ] [main                ] - Applying 39 migrations files [database]
+2020-08-23T07:25:05.371Z [jfmd ] [INFO ] [49388e32142e4008] [migrator.go:67                ] [main                ] - Applied 96 database migrations statements [database]
+2020-08-23T07:25:05.371Z [jfmd ] [INFO ] [49388e32142e4008] [application.go:55             ] [main                ] - Metadata (jfmd) service initialization started. Version: 2.7.3 Revision: 20703900 PID: 4210 Home: /opt/jfrog/artifactory/var [app_initializer]
+2020-08-23T07:25:05.392Z [jfmd ] [INFO ] [49388e32142e4008] [server_bearer.go:158          ] [main                ] - Created service_id and pushed to store: jfmd@01egd39pev7r66bztspq65dps6 [ServerInit]
+2020-08-23T07:25:09.423Z [jfmd ] [INFO ] [49388e32142e4008] [accessclient.go:51            ] [main                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access': Failed to access :http://localhost:8046/access/api/v1/system/ping return status code : 404 [access_client]
+2020-08-23T07:25:11.540Z [jfmd ] [INFO ] [49388e32142e4008] [accessclient.go:51            ] [main                ] - Cluster join: Successfully joined the cluster [access_client]
+2020-08-23T07:25:11.541Z [jfmd ] [INFO ] [49388e32142e4008] [accessclient.go:51            ] [main                ] - Executing Router register at: localhost:8046 [access_client]
+2020-08-23T07:25:11.555Z [jfmd ] [INFO ] [49388e32142e4008] [router_middlewares.go:57      ] [main                ] - 
+Metadata Info
+========================
+
+Keys.ReadIntervalDuration                            | 1s
+Shared.NewRelic.AppName                              | 
+Logging.Application.Rotation.MaxFiles                | 10
+Logging.Application.Rotation.IntervalSeconds         | 0
+Logging.Request.Rotation.MaxFiles                    | 10
+Database.Type                                        | 1
+Keys.ReadAttempts                                    | 120
+Logging.Request.Rotation.Compress                    | true
+Profiling.Enabled                                    | false
+Port                                                 | 8086
+Shared.NewRelic.LicenseKey                           | 
+Logging.Application.FilePath                         | metadata-service.log
+Logging.Application.Level                            | info
+Logging.Request.FilePath                             | metadata-request.log
+Logging.Application.Rotation.MaxAgeDays              | 365
+Logging.Request.Rotation.MaxAgeDays                  | 365
+Logging.Request.Rotation.IntervalSeconds             | 0
+AccessClient.Url                                     | http://localhost:8081/access
+Shared.NewRelic.Enabled                              | false
+Shared.NewRelic.EnableDebugLog                       | false
+Shared.NewRelic.DistributedTracerEnabled             | true
+Logging.Application.Rotation.MaxSizeMb               | 25
+Logging.Application.Rotation.Compress                | true
+Logging.Request.Rotation.MaxSizeMb                   | 25
+
+2020-08-23T07:25:11.555Z [jfmd ] [INFO ] [49388e32142e4008] [router_middlewares.go:58      ] [main                ] - Metadata (jfmd) service initialization completed in 6.183 seconds. Listening on port: 8086 [router]
+2020-09-04T18:22:34.374Z [jfmd ] [INFO ] [122460f24d19c622] [database_bearer.go:92         ] [main                ] - Connecting to (db config: {sqlite /opt/jfrog/artifactory/var/data/metadata/sqlite.db?_fk=yes&_busy_timeout=5000&_txlock=immediate&cache=shared}) [database]
+2020-09-04T18:22:34.516Z [jfmd ] [INFO ] [122460f24d19c622] [migrator.go:61                ] [main                ] - Applying 39 migrations files [database]
+2020-09-04T18:22:34.517Z [jfmd ] [INFO ] [122460f24d19c622] [application.go:55             ] [main                ] - Metadata (jfmd) service initialization started. Version: 2.7.3 Revision: 20703900 PID: 3827 Home: /opt/jfrog/artifactory/var [app_initializer]
+2020-09-04T18:22:34.522Z [jfmd ] [INFO ] [122460f24d19c622] [server_bearer.go:156          ] [main                ] - Got service_id from datastore: jfmd@01egd39pev7r66bztspq65dps6 [ServerInit]
+2020-09-04T18:22:38.589Z [jfmd ] [INFO ] [122460f24d19c622] [accessclient.go:51            ] [main                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp 127.0.0.1:8046: connect: connection refused [access_client]
+2020-09-04T18:22:43.594Z [jfmd ] [INFO ] [122460f24d19c622] [accessclient.go:51            ] [main                ] - Cluster join: Retry 10: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp 127.0.0.1:8046: connect: connection refused [access_client]
+2020-09-04T18:22:48.611Z [jfmd ] [INFO ] [122460f24d19c622] [accessclient.go:51            ] [main                ] - Cluster join: Retry 15: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp 127.0.0.1:8046: connect: connection refused [access_client]
+2020-09-04T18:22:53.626Z [jfmd ] [INFO ] [122460f24d19c622] [accessclient.go:51            ] [main                ] - Cluster join: Retry 20: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp 127.0.0.1:8046: connect: connection refused [access_client]
+2020-09-04T18:22:58.715Z [jfmd ] [INFO ] [122460f24d19c622] [accessclient.go:51            ] [main                ] - Cluster join: Successfully joined the cluster [access_client]
+2020-09-04T18:22:58.715Z [jfmd ] [INFO ] [122460f24d19c622] [accessclient.go:51            ] [main                ] - Executing Router register at: localhost:8046 [access_client]
+2020-09-04T18:22:58.727Z [jfmd ] [INFO ] [122460f24d19c622] [router_middlewares.go:57      ] [main                ] - 
+Metadata Info
+========================
+
+Shared.NewRelic.AppName                              | 
+Logging.Application.Rotation.IntervalSeconds         | 0
+Logging.Request.Rotation.Compress                    | true
+Keys.ReadAttempts                                    | 120
+Shared.NewRelic.LicenseKey                           | 
+Logging.Application.Rotation.Compress                | true
+Logging.Request.Rotation.MaxSizeMb                   | 25
+Database.Type                                        | 1
+Keys.ReadIntervalDuration                            | 1s
+Logging.Application.Rotation.MaxFiles                | 10
+Logging.Application.Rotation.MaxAgeDays              | 365
+Logging.Request.Rotation.MaxFiles                    | 10
+Profiling.Enabled                                    | false
+Shared.NewRelic.DistributedTracerEnabled             | true
+Logging.Application.FilePath                         | metadata-service.log
+Logging.Application.Level                            | info
+Logging.Application.Rotation.MaxSizeMb               | 25
+Logging.Request.Rotation.MaxAgeDays                  | 365
+Logging.Request.Rotation.IntervalSeconds             | 0
+Port                                                 | 8086
+Shared.NewRelic.Enabled                              | false
+Shared.NewRelic.EnableDebugLog                       | false
+Logging.Request.FilePath                             | metadata-request.log
+AccessClient.Url                                     | http://localhost:8081/access
+
+2020-09-04T18:22:58.727Z [jfmd ] [INFO ] [122460f24d19c622] [router_middlewares.go:58      ] [main                ] - Metadata (jfmd) service initialization completed in 24.210 seconds. Listening on port: 8086 [router]
+2020-09-07T17:02:22.796Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [database_bearer.go:92         ] [main                ] - Connecting to (db config: {sqlite /opt/jfrog/artifactory/var/data/metadata/sqlite.db?_fk=yes&_busy_timeout=5000&_txlock=immediate&cache=shared}) [database]
+2020-09-07T17:02:22.947Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [migrator.go:61                ] [main                ] - Applying 39 migrations files [database]
+2020-09-07T17:02:22.948Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [application.go:55             ] [main                ] - Metadata (jfmd) service initialization started. Version: 2.7.3 Revision: 20703900 PID: 3833 Home: /opt/jfrog/artifactory/var [app_initializer]
+2020-09-07T17:02:23.030Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [server_bearer.go:156          ] [main                ] - Got service_id from datastore: jfmd@01egd39pev7r66bztspq65dps6 [ServerInit]
+2020-09-07T17:02:27.261Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [accessclient.go:51            ] [main                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp 127.0.0.1:8046: connect: connection refused [access_client]
+2020-09-07T17:02:32.305Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [accessclient.go:51            ] [main                ] - Cluster join: Retry 10: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp 127.0.0.1:8046: connect: connection refused [access_client]
+2020-09-07T17:02:37.340Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [accessclient.go:51            ] [main                ] - Cluster join: Retry 15: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp 127.0.0.1:8046: connect: connection refused [access_client]
+2020-09-07T17:02:42.350Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [accessclient.go:51            ] [main                ] - Cluster join: Retry 20: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp 127.0.0.1:8046: connect: connection refused [access_client]
+2020-09-07T17:02:47.360Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [accessclient.go:51            ] [main                ] - Cluster join: Retry 25: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp 127.0.0.1:8046: connect: connection refused [access_client]
+2020-09-07T17:02:52.384Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [accessclient.go:51            ] [main                ] - Cluster join: Retry 30: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp 127.0.0.1:8046: connect: connection refused [access_client]
+2020-09-07T17:02:57.397Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [accessclient.go:51            ] [main                ] - Cluster join: Retry 35: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp 127.0.0.1:8046: connect: connection refused [access_client]
+2020-09-07T17:03:02.639Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [accessclient.go:51            ] [main                ] - Cluster join: Successfully joined the cluster [access_client]
+2020-09-07T17:03:02.639Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [accessclient.go:51            ] [main                ] - Executing Router register at: localhost:8046 [access_client]
+2020-09-07T17:03:02.691Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [router_middlewares.go:57      ] [main                ] - 
+Metadata Info
+========================
+
+Port                                                 | 8086
+Shared.NewRelic.LicenseKey                           | 
+Logging.Application.Rotation.MaxSizeMb               | 25
+Logging.Request.Rotation.MaxFiles                    | 10
+Logging.Request.Rotation.MaxAgeDays                  | 365
+Logging.Request.Rotation.Compress                    | true
+Database.Type                                        | 1
+Keys.ReadIntervalDuration                            | 1s
+Profiling.Enabled                                    | false
+Shared.NewRelic.Enabled                              | false
+Shared.NewRelic.EnableDebugLog                       | false
+Logging.Application.Rotation.MaxFiles                | 10
+Logging.Application.Rotation.MaxAgeDays              | 365
+Keys.ReadAttempts                                    | 120
+Shared.NewRelic.DistributedTracerEnabled             | true
+Logging.Application.FilePath                         | metadata-service.log
+Logging.Application.Rotation.IntervalSeconds         | 0
+Logging.Request.FilePath                             | metadata-request.log
+Logging.Request.Rotation.IntervalSeconds             | 0
+Shared.NewRelic.AppName                              | 
+Logging.Application.Level                            | info
+Logging.Application.Rotation.Compress                | true
+Logging.Request.Rotation.MaxSizeMb                   | 25
+AccessClient.Url                                     | http://localhost:8081/access
+
+2020-09-07T17:03:02.692Z [jfmd ] [INFO ] [a87377d2c2431f6 ] [router_middlewares.go:58      ] [main                ] - Metadata (jfmd) service initialization completed in 39.743 seconds. Listening on port: 8086 [router]

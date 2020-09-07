@@ -1,0 +1,3 @@
+[filesystem "Oracle Corporation|1.8.0_242|/dev/mapper/vagrant--vg-root"]
+	timestampResolution = 1001 microseconds
+	minRacyThreshold = 25771 microseconds
