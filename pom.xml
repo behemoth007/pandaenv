@@ -94,6 +94,25 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.19.1</version>
+        <configuration>
+          <includes>
+            <include>HelloControllerTest.java</include>
+            <include>PandaApplicationTest.java</include>
+          </includes>
+        </configuration>
+        <dependencies>
+          <!-- let surefire run JUnit 4 but also JUnit 5 tests -->
+          <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-surefire-provider</artifactId>
+            <version>1.1.0</version>
+          </dependency>
+        </dependencies>
+      </plugin>
     </plugins>
     <extensions>
       <extension>
@@ -101,7 +120,7 @@
         <artifactId>wagon-ftp</artifactId>
         <version>3.4.1</version>
       </extension>
-    </extensions>
+    </extensions>    
   </build>
   <profiles>
     <profile>
