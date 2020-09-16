@@ -104,8 +104,9 @@
             <configuration>
               <repository>${project.artifactId}</repository>
               <tag>${project.version}</tag>
+              <pullNewerImage>false</pullNewerImage>
               <buildArgs>
-                <JAR_FILE>target/${project.artifactId}-${project.version}.jar</JAR_FILE>
+                <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
               </buildArgs>
             </configuration>
             <dependencies>
